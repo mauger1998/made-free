@@ -50,7 +50,7 @@
 }
 .hollow-button:hover {
     background-color:var(--yellow);
-    color:black;
+    color:var(--background);
     transition:500ms;
 }
 .solid-button:hover {
