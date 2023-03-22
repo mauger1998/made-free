@@ -35,6 +35,7 @@
     border:2px solid var(--yellow);
     cursor:pointer;
     transition:500ms;
+    font-size:20px;
 }
 .solid-button {
     background-color:var(--yellow);
@@ -45,6 +46,7 @@
     border:2px solid var(--yellow);
     cursor:pointer;
     transition:500ms;
+    font-size:20px;
 }
 .hollow-button:hover {
     background-color:var(--yellow);
@@ -202,6 +204,16 @@ nav ul {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width:700px) {
+    .header-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .header-wrapper {
+        padding-inline:1rem;
+    }
+}
 
 /* Main */
 h1 {
@@ -228,5 +240,194 @@ main .wrapper {
     justify-content: center;
     flex-direction: column;
     gap:1rem;
+}
+.titles p {
+    font-weight:300;
+    line-height:1.75;
+    text-align:center;
+}
+.times-of-service > p {
+    font-family: 'Merriweather', serif;
+    font-size:var(--mobile-subheading);
+} 
+@media (max-width:946px) {
+    h1 {
+        font-size:65px;
+    }
+    
+}
+@media (max-width:842px) {
+    h1 {
+        font-size:60px;
+    }
+    
+}
+@media (max-width:788px) {
+    h1 {
+        font-size:50px;
+    }
+    
+}
+@media (max-width:700px) {
+    main .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:606px) {
+    h1 {
+        font-size:var(--mobile-heading-one);
+    }
+    .titles p {
+        font-size:var(--mobile-text);
+        max-width:40ch;
+    }
+    .times-of-service > p {
+        font-family: 'Merriweather', serif;
+        font-size:var(--mobile-subheading);
+    } 
+    .list p {
+        font-size:var(--mobile-text);
+    }
+}
+@media (max-width:500px) {
+    main .wrapper {
+        padding-inline:1rem;
+    }
+}
 
+/** List **/
+
+main .wrapper {
+    position:relative;
+}
+
+
+.times-of-service {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    position:absolute;
+    left:5%;
+    bottom:5%;
+    width:max(30%, 20em);
+    background-color:var(--glass);
+    backdrop-filter: blur(10px);
+    padding:1rem;
+    border-radius:1rem;
+}
+.list {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:100%;
+}
+.list-left {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height:100%;
+    gap:1rem;
+}
+@Media (max-width:350px) {
+    .times-of-service {
+        width:max(30%, 18em);
+
+    }
+}
+@Media (max-width:320px) {
+    .times-of-service {
+        width:max(30%, 17em);
+
+    }
+}
+@Media (max-width:296px) {
+    .times-of-service {
+        width:max(28%, 16.5em);
+    }
+    h1 {
+        font-size:45px;
+    }
+}
+/* Founder */
+
+.founder-section .wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    padding-left:0;
+}
+.founder-left,
+.founder-right {
+    width:50%;
+}
+.founder-left img {
+    width:100%;
+    object-fit:cover;
+}
+.founder-right {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+.founder-right h2 {
+    font-size:var(--heading-two);
+    
+}
+.founder-right h2 span img {
+    margin-bottom:0.5rem;
+}
+.founder-right p {
+    font-size:var(--text);
+    max-width:45ch;
+    line-height:1.75;
+}
+@media (max-width:1015px) {
+    .founder-section .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .founder-left,
+    .founder-right {
+        width:100%;
+    }
+    .founder-right {
+        padding-left:4rem;
+    }
+    .founder-right h2 {
+        max-width:20ch;
+    }
+}
+@media (max-width:700px) {
+    .founder-right {
+        padding-left:2rem;
+    }
+    .founder-section .wrapper {
+        padding-right:2rem;
+    }
+}
+@media (max-width:606px) {
+    .founder-right h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .founder-right p {
+        font-size:var(--mobile-text);
+    }
+}
+@media (max-width:500px) {
+    .founder-right {
+        padding-left:1rem;
+    }
+    .founder-section .wrapper {
+        padding-right:1rem;
+    }
+}
+@media (max-width:350px) {
+    .founder-right {
+        gap:1rem;
+    }
 }
