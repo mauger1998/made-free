@@ -52,10 +52,10 @@
     background-color:var(--yellow);
     color:var(--background);
     transition:500ms;
+    transform:scale(0.9);
 }
 .solid-button:hover {
-    background-color:transparent;
-    color:var(--yellow);
+    transform:scale(0.9);
     transition:500ms;
 }
 ul {
@@ -152,6 +152,7 @@ body {
 /* Header */
 header {
     position:fixed;
+    z-index:1000000;
 }
 .header-wrapper {
     width:100%;
@@ -543,6 +544,7 @@ main .wrapper {
     .grid-item {
         width:100%;
     }
+   
     
 } 
 @media (max-width:728px) {
@@ -596,50 +598,236 @@ main .wrapper {
         max-width:100ch;
         width:100% !important;
     }
-}
-@Media (max-width:433px) {
-    .intro-titles h2 {
-        font-size:25px;
-    }
-    .intro-titles p {
-        font-size:12px;;
-    }
-    .intro-titles h2 img {
-        width:50px;
+   
+    .grid-item {
+        display:flex;
+        align-items: center;
+        text-align:center;
     }
 }
-@Media (max-width:345px) {
-    .intro-titles h2 {
-        font-size:25px;
-    }
-    .intro-titles p {
-        font-size:12px;;
-    }
-    .intro-titles h2 img {
-        width:40px;
+@Media (max-width:324px) {
+    .grid-item p {
+        font-size:12px;
     }
 }
 
-@Media (max-width:321px) {
-    .intro-titles h2 {
-        font-size:25px;
+
+
+/** Quote Section **/
+
+.quote-section .wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-block:12rem;
+}
+.quote-section .wrapper p {
+    font-size:60px;
+    font-family: 'Merriweather', serif;
+    line-height:1.75;
+    font-weight:300 !important;
+}
+@media (max-width:700px) {
+    .quote-section .wrapper {
+        padding-inline:2rem;
+        padding-block:2rem !important;
     }
-    .intro-titles p {
-        font-size:12px;;
+    .quote-section .wrapper p {
+        font-size:40px;
     }
-    .intro-titles h2 img {
+}
+@media (max-width:500px) {
+    .quote-section .wrapper {
+        padding-inline:1rem;
+    }
+    .quote-section .wrapper p {
+        font-size:30px;
+    }
+    
+}
+/** Series Section **/
+
+.series-section {
+    background-image: linear-gradient(to bottom, #304C59, #304C5900 60% ), linear-gradient(to top, #304C59, #304C5900 60% ), url(mfm-home/freedom-2053281_1920.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.series-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block:12rem;
+    gap:8rem;
+}
+.series-content {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:4rem;
+
+}
+.bottom-right,
+.top-left {
+    width:50%;
+}
+.bottom-right {
+    align-self:flex-end;
+}
+.series-section p {
+    width:100%;
+    line-height:1.75;
+    font-size:var(--text);
+}
+.series-section button {
+    display:flex;
+    align-items: center;
+    padding:0.5rem 2rem;
+    background-color:transparent;
+    color:var(--yellow);
+    border:2px solid var(--yellow);
+    border-radius:2rem;
+    margin-top:1rem;
+    gap:1rem;
+    border-radius:0.25rem;
+    padding:0.75rem 2rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    cursor:pointer;
+    transition:500ms;
+
+}
+.series-section button:hover {
+    transform:scale(0.9);
+    transition:500ms;
+}
+.series-section button img {
+    width:7.5px;
+}
+.series-titles {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.series-titles p {
+    width:max-content;
+    font-size:var(--tag);
+}
+.series-titles h2 img {
+    margin-bottom:0.75rem;
+}
+.series-titles h2 span:nth-of-type(2) img {
+    margin-bottom:0.75rem;
+    margin-left:0.5rem;
+}
+.series-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+    text-align:center;
+
+}
+@media (max-width:1015px) {
+    .series-titles h2 {
+        font-size:40px;
+    }
+    .series-titles img {
+        width:100px;
+    }
+}
+@media (max-width:821px) {
+    .series-titles h2 {
+        font-size:35px;
+    }
+    .series-titles img {
+        width:75px;
+    }
+    .series-titles p {
+        
+        font-size:20px;
+    }
+}
+
+@Media (max-width:700px) {
+    .series-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:647px) {
+    .series-titles h2 {
+        font-size:30px;
+    }
+    .series-titles img {
+        width:65px;
+    }
+    .series-titles p {
+        
+        font-size:18px;
+    }
+}
+@media (max-width:606px){
+    .series-content p {
+        font-size:var(--mobile-text);
+    }
+}
+
+
+@media (max-width:564px) {
+    .series-titles h2 {
+        font-size:30px;
+    }
+    .series-titles img {
         width:30px;
     }
+    .series-titles p {
+        
+        font-size:18px;
+    }
 }
-@Media (max-width:297px) {
-    .intro-titles h2 {
-        font-size:25px;
+@Media (max-width:500px) {
+    .series-section .wrapper {
+        padding-inline:1rem;
     }
-    .intro-titles p {
-        font-size:12px;;
+}
+@Media (max-width:466px) {
+    h2 img {
+        display:none;
     }
-    .intro-titles h2 img {
-        width:25px;
+}
+@Media (max-width:432px) {
+    .series-section button {
+        padding-inline:1rem;
+    }
+}
+@Media (max-width:400px) {
+    .bottom-right,
+    .top-left {
+        width:70%;
     }
 }
 
+/* Banner Section ***/
+
+.banner-section img {
+    width:100%;
+}
+.banner-section {
+    padding-block:20rem;
+    background-image: linear-gradient(to top, #304C59, #304C5900 60%), linear-gradient(to bottom, #304C59, #304C5900 60%), url(mfm-home/ResurrectionDay1.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin-block:12rem;
+
+}
+@media (max-width:1015px) {
+    .banner-section {
+        margin-block:6rem;
+    }
+}
+@media (max-width:500px) {
+    .banner-section {
+        margin-block:2rem;
+    }
+}
