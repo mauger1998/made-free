@@ -499,3 +499,48 @@ main .wrapper {
         padding-inline:1rem;
     }
 }
+/* Story */
+
+.story-section .wrapper {
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    padding-right:0;
+}
+.story-right,
+.story-left {
+    width:50%;
+}
+.story-right {
+    padding-block:19rem;
+    background-image: linear-gradient(to top, #304C59, #304C5900 50% ), linear-gradient(to bottom, #304C59, #304C5900 50% ), linear-gradient(to right, #304C59, #304C5900 50% ), url(../mfm-connect/Rectangle48.png);
+    background-size:cover;
+}
+.story-right img {
+    width:100%;
+}
+.story-left {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+.story-titles p {
+    color:var(--yellow);
+    font-weight:700;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.story-left > p {
+    line-height:1.75;
+    font-weight:200;
+    font-size:var(--text);
+}
+.story-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+
+}
+.story-titles p {
+    font-size:var(--tag);
+}
