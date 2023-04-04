@@ -555,6 +555,11 @@ h2 {
         width:100%;
     }
     
+}
+@media (max-width:700px) {
+    .intro-section .wrapper {
+        padding-inline:2rem;
+    }
 } 
 
 @Media (max-width:606px) {
@@ -577,11 +582,7 @@ h2 {
         font-size:var(--mobile-text);
     }
 }
-@media (max-width:700px) {
-    .intro-section .wrapper {
-        padding-inline:2rem;
-    }
-}
+
 @media (max-width:500px) {
     .intro-section .wrapper {
         padding-inline:1rem;
