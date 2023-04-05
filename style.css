@@ -902,6 +902,8 @@ footer .wrapper {
     flex-direction: column;
     align-items: flex-start;
     gap:6rem;
+    padding-bottom:2rem;
+
 }
 .footer-top,
 .footer-mid,
