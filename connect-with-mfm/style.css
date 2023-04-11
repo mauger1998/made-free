@@ -223,7 +223,7 @@ h1 {
     text-align:center;
 }
 main {
-    background-image: linear-gradient(to top, #304C59, #304C5900 30%), url(../mfm-connect/pexels-paul-robinson-27967811.png);
+    background-image: linear-gradient(to top, #304C59, #304C5900 10%), url(../mfm-connect/pexels-paul-robinson-27967811.png);
     background-size:cover;
     background-position: center;
 }

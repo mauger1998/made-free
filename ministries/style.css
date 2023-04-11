@@ -223,7 +223,7 @@ h1 {
     text-align:center;
 }
 main {
-    background-image: linear-gradient(to top, #304C59, #304C5900 10%), url(mfm-home/618-1.png);
+    background-image: linear-gradient(to top, #304C59, #304C5900 10%), url(../mfm-ministries/BathingPools1.png);
     background-size:cover;
     background-position: center;
 }
@@ -246,6 +246,7 @@ main .wrapper {
     font-weight:300;
     line-height:1.75;
     text-align:center;
+    max-width:40ch;
 }
 .times-of-service > p {
     font-family: 'Merriweather', serif;
@@ -356,543 +357,571 @@ main .wrapper {
         font-size:45px;
     }
 }
-/* Founder */
-
-.founder-section .wrapper {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:4rem;
-    padding-left:0;
-}
-.founder-left,
-.founder-right {
-    width:50%;
-}
-.founder-left img {
-    width:100%;
-    object-fit:cover;
-}
-.founder-right {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:2rem;
-}
-.founder-right h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-    
-}
-h2 {
-    line-height:1.2;
-}
-
-.founder-right p {
-    font-size:var(--text);
-    max-width:45ch;
-    line-height:1.75;
-}
-@media (max-width:1015px) {
-    .founder-section .wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .founder-left,
-    .founder-right {
-        width:100%;
-    }
-    .founder-right {
-        padding-left:4rem;
-    }
-    .founder-right h2 {
-        max-width:20ch;
-    }
-}
-@media (max-width:700px) {
-    .founder-right {
-        padding-left:2rem;
-    }
-    .founder-section .wrapper {
-        padding-right:2rem;
-    }
-}
-@media (max-width:606px) {
-    .founder-right h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .founder-right p {
-        font-size:var(--mobile-text);
-    }
-}
-@media (max-width:500px) {
-    .founder-right {
-        padding-left:1rem;
-    }
-    .founder-section .wrapper {
-        padding-right:1rem;
-    }
-}
-@media (max-width:350px) {
-    .founder-right {
-        gap:1rem;
-    }
-}
-
-/* Intro Section */
-.intro-section {
-    background-image: linear-gradient(to top, #304C59, #304C5900 75% ),linear-gradient(to bottom, #304C59, #304C5900 75% ), url(mfm-home/dock-5539524_1920.png);
+/* Bible */
+.bible-section {
+    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/bible-4249164_1920.png);
     background-size:cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
-
-.intro-section .wrapper {
+.bible-section .wrapper {
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:4rem;
-    
-}
-.intro-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-    text-align:center;
-}
-.intro-titles p {
-    font-family: 'Permanent Marker', cursive;
-    color:var(--yellow);
-    font-size:var(--tag);
-    text-align:center;
-}
-.intro-titles {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
-}
-.intro-titles h2 img {
-    margin-bottom:0.75rem;
-}
-
-.intro-main {
-    display:flex;
-    align-items: center;
     gap:4rem;
-    width:100%;
 }
-.intro-left,
-.intro-right {
-    width:50%;
-}
-.intro-left {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:1rem;
-}
-.intro-left-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.intro-left-titles p {
-    color:var(--yellow);
-    font-size:var(--tag);
-    font-family: 'Permanent Marker', cursive;
-}
-.intro-left > p {
-    line-height:1.75;
-    font-weight:300;
-    max-width:40ch;
-}
-.intro-left-titles h2 {
+.bible-titles h2 {
     font-size:var(--heading-two);
     font-family: 'Permanent Marker', cursive;
 }
-.intro-right {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:2rem;
-    place-items: flex-end;
-
-}
-.grid-item {
+.bible-titles {
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap:1rem;
-}
-.grid-item img {
-    width:50px;
-}
-.grid-item p {
-    line-height:1.75;
-    font-weight:300;
-    max-width:20ch;
-}
-
-@media (max-width:1015px) {
-    .intro-main {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .intro-right {
-        width:100%;
-    }
-    .grid-item {
-        width:100%;
-    }
-   
-    
-} 
-@media (max-width:728px) {
-    .intro-left > p {
-        max-width:100ch;
-        width:90% !important;
-    }
-    .intro-left {
-        width:100%;
-    }
-    
-}
-@media (max-width:700px) {
-    .intro-section .wrapper {
-        padding-inline:2rem;
-    }
-} 
-
-@Media (max-width:606px) {
-    .intro-titles h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .intro-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .intro-left-titles h2{
-        font-size:var(--mobile-heading-two);
-    }
-    .intro-left-titles > p {
-        font-size:var(--mobile-tag);
-    }
-    .intro-left > p {
-        font-size:var(--mobile-text);
-    }
-    .grid-item p {
-        font-size:var(--mobile-text);
-    }
-}
-
-@media (max-width:500px) {
-    .intro-section .wrapper {
-        padding-inline:1rem;
-    }
-    .intro-left > p {
-        max-width:100ch;
-        width:100% !important;
-    }
-   
-    .grid-item {
-        display:flex;
-        align-items: center;
-        text-align:center;
-    }
-}
-@Media (max-width:324px) {
-    .grid-item p {
-        font-size:12px;
-    }
-}
-
-
-
-/** Quote Section **/
-
-.quote-section .wrapper {
-    display:flex;
     align-items: center;
     justify-content: center;
-    padding-block:12rem;
 }
-.quote-section .wrapper p {
-    font-size:60px;
-    font-family: 'Merriweather', serif;
-    line-height:1.75;
-    font-weight:300 !important;
+.bible-titles p {
+    font-size:var(--tag);
+    color:var(--yellow);
+    font-family: 'Permanent Marker', cursive;
 }
-@media (max-width:700px) {
-    .quote-section .wrapper {
-        padding-inline:2rem;
-        padding-block:2rem !important;
-    }
-    .quote-section .wrapper p {
-        font-size:40px;
-    }
-}
-@media (max-width:500px) {
-    .quote-section .wrapper {
-        padding-inline:1rem;
-    }
-    .quote-section .wrapper p {
-        font-size:30px;
-    }
-    
-}
-/** Series Section **/
-
-.series-section {
-    background-image: linear-gradient(to bottom, #304C59, #304C5900 60% ), linear-gradient(to top, #304C59, #304C5900 60% ), url(mfm-home/freedom-2053281_1920.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-}
-
-.series-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-block:12rem;
-    gap:8rem;
-}
-.series-content {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:4rem;
-
-}
-.bottom-right,
-.top-left {
-    width:50%;
-}
-.bottom-right {
-    align-self:flex-end;
-}
-.series-section p {
+.bible-content {
     width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:8rem; 
+}
+.bible-top {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+}
+.bible-top p {
+    max-width:50ch;
     line-height:1.75;
     font-size:var(--text);
+    font-weight:200;
 }
-.series-section button {
-    display:flex;
-    align-items: center;
-    padding:0.5rem 2rem;
-    background-color:transparent;
-    color:var(--yellow);
-    border:2px solid var(--yellow);
-    border-radius:2rem;
-    margin-top:1rem;
-    gap:1rem;
-    border-radius:0.25rem;
-    padding:0.75rem 2rem;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    cursor:pointer;
-    transition:500ms;
-
+.bible-top img {
+    width:30%;
 }
-.series-section button:hover {
-    transform:scale(0.9);
-    transition:500ms;
-}
-.series-section button img {
-    width:7.5px;
-}
-.series-titles {
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.series-titles p {
-    width:max-content;
-    font-size:var(--tag);
-}
-.series-titles h2 img {
-    margin-bottom:0.75rem;
-}
-
-.series-titles h2 {
+.bible-bottom p:nth-of-type(1) {
     font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-    text-align:center;
-
+    width:100%;
+    align-self:flex-end;
 }
-
-
-@Media (max-width:700px) {
-    .series-section .wrapper {
+.bible-bottom p:nth-of-type(2) {
+    font-size:var(--heading-two);
+    width:100%;
+    max-width:36ch;
+    line-height:1.75;
+    font-size:var(--text);
+    font-weight:200;
+}
+.bible-bottom {
+    display:flex;
+    width:100%;
+}
+@media (max-width:1015px) {
+    .bible-top {
+        width:100%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap:4rem;
+    }
+    .bible-content p {
+        max-width:100% !important;
+        width:100% !important;
+    }
+    .bible-content {
+        flex-direction: column-reverse;
+    }
+    .bible-bottom {
+        width:100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:4rem;
+    }
+    .bible-top img {
+        width:100%;
+    }
+    .bible-section .wrapper {
+        gap:8rem;
+    }
+}
+@media (max-width:700px) {
+    .bible-section .wrapper {
         padding-inline:2rem;
     }
 }
+@media (max-width:500px) {
+    .bible-section .wrapper {
+        padding-inline:1rem;
+        gap:4rem !important;
 
-@media (max-width:606px){
-    .series-content p {
-        font-size:var(--mobile-text);
     }
-    .series-titles h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .series-titles p {
+    .bible-titles p {
         font-size:var(--mobile-tag);
     }
-    .top-left,
-    .bottom-right {
-        width:100%;
+    .bible-titles h2 {
+        font-size:var(--mobile-heading-two);
+        text-align:center;
     }
-    .series-section .wrapper {
+    .bible-content p {
+        font-size:var(--mobile-text) !important;
+    }
+    .bible-bottom p:nth-of-type(1) {
+        font-size:var(--mobile-heading-two) !important;
+    }
+    
+    .bible-content {
         gap:4rem;
     }
 }
-
-
-
-@Media (max-width:500px) {
-    .series-section .wrapper {
-        padding-inline:1rem;
-    }
-}
-
-@Media (max-width:432px) {
-    .series-section button {
-        padding-inline:1rem;
-    }
-}
-
-
-/** Contact **/
-.contact-section {
-    background-image: linear-gradient(to top, #304C59, #304C5900 60% ), linear-gradient(to bottom, #304C59, #304C5900 60% ), url(mfm-home/ocean-2203720_1920.png);
+/* Youth */
+.children-section {
+    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/Childrenpraisingsunseet.png);
     background-size:cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-
-.contact-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:4rem;
-}
-.contact-titles {
-    align-self:center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contact-titles h2 {
-    font-size:var(--heading-two);
+.children-titles p {
+    font-size:var(--tag);
     font-family: 'Permanent Marker', cursive;
-    max-width:20ch;
-    text-align:center;
-}
-.contact-titles p {
-    font-size: var(--tag);
-    font-family: 'Permanent Marker', cursive;
-}
-.contact-content {
-    display:flex;
-    align-items: center;
-    gap:4rem;
-    width:100%;
-}
-.contact-titles p {
     color:var(--yellow);
 }
-.left-card {
-    width:40%;
-    background-color:var(--glass);
-    padding:2rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding-block:3rem;
+.children-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+    text-align:center;
 }
-.contact-section input:focus,
-.contact-section textarea:focus {
-    outline:1px solid var(--yellow);
-}
-.contact-right {
-    width:60%;
+.children-titles {
     display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.children-content p {
+    font-size:var(--text);
+    font-weight:200;
+    line-height:1.75;
+}
+.children-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.children-content {
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap:8rem;
+}
+.children-left {
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:8rem;
+}
+.children-right {
+    width:50%;
+    display:flex;
+    justify-content: flex-end;
     align-items: flex-end;
     align-self:flex-end;
 }
-.contact-section .solid-button {
-    margin-top:1rem;
+.children-right img {
+    width:75%;
 }
-.contact-section form {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:1rem;
-}
-.contact-section input,
-.contact-section textarea {
-    background-color:transparent;
-    padding:0.5rem 0.25rem;
-    border:none;
-    width:100%;
-    margin-top:0.75rem;
-    border-bottom:2px solid var(--yellow);
-}
-fieldset {
-    outline:none;
-    border:none;
-    width:100%;
-
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.contact-right p {
-    font-size:var(--heading-two);
-    font-family: 'Merriweather', serif;
-}
-
-@Media (max-width:1015px) {
-    .contact-content {
-        flex-direction:column;
+@media (max-width:1015px) {
+    .children-content {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .contact-section .wrapper {
-        gap:8rem;
+    .children-left,
+    .children-right {
+        width:100%;
     }
-    .left-card,
-    .contact-right {
+    .children-right img {
         width:100%;
     }
 }
-@Media (max-width: 700px) {
-    .contact-section .wrapper {
+@media (max-width:700px) {
+    .children-section .wrapper {
         padding-inline:2rem;
     }
 }
-@media (max-width:606px) {
-    .contact-right p {
-        font-size:var(--mobile-heading-two);
-    }
-    .contact-titles h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .contact-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .contact-section .wrapper {
+@media (max-width:500px) {
+    .children-section .wrapper {
+        padding-inline:1rem;
         gap:4rem;
     }
-    .contact-section button {
-        font-size:15px;
+    .children-content p {
+        font-size:var(--mobile-text);
+    }
+    .children-titles p {
+        font-size:var(--mobile-tag);
+    }
+    .children-titles h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .children-left,
+    .children-content {
+        gap:4rem !important;
+    }
+    .children-section {
+        background-position:center;
     }
 }
-@Media (max-width: 500px) {
-    .contact-section .wrapper {
-        padding-inline:1rem;
+/* Second Youth */
+
+.youth-titles p {
+    font-size:var(--tag);
+    font-family: 'Permanent Marker', cursive;
+    color:var(--yellow);
+}
+.youth-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+}
+.youth-titles {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.youth-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.youth-content {
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap:8rem;
+}
+.youth-content p:nth-of-type(1) {
+    font-size:var(--subheading);
+    font-weight:700;
+}
+.youth-content p:nth-of-type(2) {
+    font-size:var(--text);
+    line-height:1.75;
+    font-weight:200;
+}
+.youth-left,
+.youth-right {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+    width:50%;
+}
+@media (max-width:1015px) {
+    .youth-content {
+        flex-direction: column;
+        align-items: flex-start;
     }
+    .youth-left,
+    .youth-right {
+        width:100%;
+    }
+}
+@Media (max-width:700px) {
+    .youth-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@Media (max-width:500px) {
+    .youth-section .wrapper {
+        padding-inline:1rem;
+        gap:4rem;
+    }
+    .youth-titles p {
+        font-size:var(--mobile-tag);
+    }
+    .youth-titles h2 {
+        font-size:var(--mobile-heading-two);
+        text-align:center;
+    }
+    .youth-content p:nth-of-type(1) {
+        font-size:var(--mobile-subheading);
+    }
+    .youth-content p:nth-of-type(2) {
+        font-size:var(--mobile-text);
+    }
+    .youth-content {
+        gap:4rem;
+    }
+
+}
+/* Missions */
+
+.missions-section {
+    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/manpraying.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.missions-titles p {
+    font-size:var(--tag);
+    font-family: 'Permanent Marker', cursive;
+    color:var(--yellow);
+}
+.missions-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+}
+.missions-titles {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.missions-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.missions-content {
+    display:flex;
+    width:100%;
+    align-items: center;
+    gap:8rem;
+    flex-direction: column;
+}
+.missions-right,
+.missions-left {
+    width:50%;
+}
+.missions-left,
+.missions-right {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+.missions-left {
+    justify-content: flex-start;
+    align-self:flex-start;
+}
+.missions-right {
+    justify-content: flex-end;
+    align-self:flex-end;
+}
+.missions-content p:nth-of-type(1) {
+    font-size:var(--subheading);
+    font-weight:700;
+}
+.missions-content p:nth-of-type(2) {
+    font-size:var(--text);
+    line-height:1.75;
+    font-weight:200;
+}
+@media (max-width:1015px) {
+    .missions-left {
+        justify-content: flex-start;
+        align-self:flex-start;
+        width:100%;
+    }
+    .missions-right {
+        justify-content: flex-end;
+        align-self:flex-start;
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .missions-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .missions-section {
+        background-position:center;
+    }
+    .missions-section .wrapper {
+        padding-inline:1rem;
+        gap:4rem;
+    }
+    .missions-content {
+        gap:4rem;
+    }
+    .missions-content p:nth-of-type(1) {
+        font-size:var(--mobile-subheading);
+        font-weight:700;
+    }
+    .missions-content p:nth-of-type(2) {
+        font-size:var(--mobile-text);
+        line-height:1.75;
+        font-weight:200;
+    }
+    .missions-titles p {
+        font-size:var(--mobile-tag);
+    }
+    .missions-titles h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    
+}
+
+/* Friday */
+
+
+.friday-section {
+    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/manpraying.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.friday-titles p {
+    font-size:var(--tag);
+    font-family: 'Permanent Marker', cursive;
+    color:var(--yellow);
+}
+.friday-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+}
+.friday-titles {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.friday-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.friday-content {
+    display:flex;
+    flex-direction:column;
+    gap:8rem;
+}
+.friday-top {
+    width:100%;
+}
+.friday-top p:nth-of-type(1) {
+    font-size:var(--subheading);
+    font-weight:700;
+}
+.friday-top p {
+    font-size:var(--text);
+    font-weight:200;
+    line-height:1.75;
+}
+.friday-list p {
+    font-size:var(--text) !important;
+    font-weight:200 !important;
+}
+
+.friday-left,
+.friday-right {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+    width:50%;
+}
+.friday-list {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+.friday-item {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+.friday-item img {
+    width:25px;
+}
+.friday-top {
+    display:flex;
+    align-items: center;
+    gap:8rem;
+}
+.friday-bottom {
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:2rem;
+}
+.friday-bottom img {
+    width:100%;
+}
+@media (max-width:1015px) {
+    .friday-top {
+        flex-direction: column;
+    }
+    .friday-left,
+    .friday-right {
+        width:100%;
+        align-items: flex-start;
+    }
+    .friday-bottom {
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:2rem;
+    }
+}
+@media (max-width:700px) {
+    .friday-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .friday-section .wrapper {
+        padding-inline:1rem;
+        gap:4rem;
+    }
+    .friday-titles h2 {
+        text-align: center;
+        font-size:var(--mobile-heading-two);
+    }
+    .friday-titles p {
+        font-size:var(--mobile-tag);
+    }
+    .friday-content {
+        gap:4rem;
+    }
+    .friday-top {
+        gap:4rem;
+    }
+    .friday-bottom {
+        gap:1rem;
+    }
+    .friday-top p:nth-of-type(1) {
+        font-size:var(--mobile-subheading);
+    }
+    .friday-top p {
+        font-size:var(--mobile-text);
+    }
+    .friday-list p {
+        font-size:var(--mobile-text) !important;
+    }
+    
 }
 
 /* Footer **/
 footer {
-    background-image: linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ), url(mfm-home/roadendssign.png);
+    background-image: linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ), url(../mfm-home/roadendssign.png);
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -903,7 +932,6 @@ footer .wrapper {
     align-items: flex-start;
     gap:6rem;
     padding-bottom:2rem;
-
 }
 .footer-top,
 .footer-mid,
@@ -1050,4 +1078,8 @@ footer form button {
     .footer-mid ul {
         align-items: center;
     }
+}
+
+h2 {
+    line-height:1.2;
 }
