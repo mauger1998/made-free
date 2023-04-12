@@ -223,7 +223,7 @@ h1 {
     text-align:center;
 }
 main {
-    background-image: linear-gradient(to top, #304C59, #304C5900 10%), url(../mfm-ministries/BathingPools1.png);
+    background-image: linear-gradient(to top, #304C59, #304C5900 10%), url(../mfm-word/CastleCornet1.png);
     background-size:cover;
     background-position: center;
 }
@@ -357,569 +357,172 @@ main .wrapper {
         font-size:45px;
     }
 }
-/* Bible */
-.bible-section {
-    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/bible-4249164_1920.png);
-    background-size:cover;
-    background-repeat: no-repeat;
+/* Passages */
+
+.passages-titles p {
+    font-size:var(--tag);
+    font-family: 'Permanent Marker', cursive;
+    color:var(--yellow);
 }
-.bible-section .wrapper {
+.passages-titles h2 {
+    font-size:var(--heading-two);
+    font-family: 'Permanent Marker', cursive;
+}
+.passages-section {
+    background-image: linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ), url(../mfm-word/dove-2516641_1920.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.passages-titles {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.passages-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.passages-content {
+    display:flex;
+    align-items: center;
+    gap:8rem;
+    justify-content: center;
+}
+.passages-right img {
+    width:100%;
+}
+.passages-right {
+    width:50%;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self:flex-end;
+}
+.passages-left {
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:4rem;
+}
+.passages-left p {
+    line-height:1.75;
+    font-weight:200;
+    font-size:var(--text);
+}
+.passages-section:nth-of-type(2) {
+    background-image: linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ), url(../mfm-word/blackbird-542460_1920.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+@Media (max-width:1015px) {
+    .passages-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .passages-right,
+    .passages-left {
+        width:100%;
+    }
+    .passages-section:nth-of-type(2) .wrapper .passages-content {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:700px) {
+    .passages-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .passages-section .wrapper {
+        padding-inline:1rem;
+        gap:4rem;
+    }
+    .passages-content {
+        gap:4rem;
+    }
+    .passages-left p {
+        font-size:var(--mobile-text);
+    }
+    .passages-titles p {
+        font-size:var(--mobile-tag);
+    }
+    .passages-titles h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .passages-section {
+        background-position:center;
+    }
+    
+}
+/* Sermons */
+
+.sermons-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8rem;
+}
+.sermons-content {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     gap:4rem;
 }
-.bible-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-}
-.bible-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.bible-titles p {
-    font-size:var(--tag);
-    color:var(--yellow);
-    font-family: 'Permanent Marker', cursive;
-}
-.bible-content {
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:8rem; 
-}
-.bible-top {
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-    align-items: center;
-}
-.bible-top p {
-    max-width:50ch;
-    line-height:1.75;
-    font-size:var(--text);
-    font-weight:200;
-}
-.bible-top img {
-    width:30%;
-}
-.bible-bottom p:nth-of-type(1) {
-    font-size:var(--heading-two);
-    width:100%;
-    align-self:flex-end;
-}
-.bible-bottom p:nth-of-type(2) {
-    font-size:var(--heading-two);
-    width:100%;
-    max-width:36ch;
-    line-height:1.75;
-    font-size:var(--text);
-    font-weight:200;
-}
-.bible-bottom {
-    display:flex;
-    width:100%;
-}
-@media (max-width:1015px) {
-    .bible-top {
-        width:100%;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap:4rem;
-    }
-    .bible-content p {
-        max-width:100% !important;
-        width:100% !important;
-    }
-    .bible-content {
-        flex-direction: column-reverse;
-    }
-    .bible-bottom {
-        width:100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap:4rem;
-    }
-    .bible-top img {
-        width:100%;
-    }
-    .bible-section .wrapper {
-        gap:8rem;
-    }
-}
-@media (max-width:700px) {
-    .bible-section .wrapper {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .bible-section .wrapper {
-        padding-inline:1rem;
-        gap:4rem !important;
-
-    }
-    .bible-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .bible-titles h2 {
-        font-size:var(--mobile-heading-two);
-        text-align:center;
-    }
-    .bible-content p {
-        font-size:var(--mobile-text) !important;
-    }
-    .bible-bottom p:nth-of-type(1) {
-        font-size:var(--mobile-heading-two) !important;
-    }
-    
-    .bible-content {
-        gap:4rem;
-    }
-}
-/* Youth */
-.children-section {
-    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/Childrenpraisingsunseet.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-.children-titles p {
-    font-size:var(--tag);
-    font-family: 'Permanent Marker', cursive;
-    color:var(--yellow);
-}
-.children-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-    text-align:center;
-}
-.children-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.children-content p {
-    font-size:var(--text);
-    font-weight:200;
-    line-height:1.75;
-}
-.children-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:8rem;
-}
-.children-content {
-    width:100%;
-    display:flex;
-    align-items: center;
-    gap:8rem;
-}
-.children-left {
-    width:50%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap:8rem;
-}
-.children-right {
-    width:50%;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self:flex-end;
-}
-.children-right img {
-    width:75%;
-}
-@media (max-width:1015px) {
-    .children-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .children-left,
-    .children-right {
-        width:100%;
-    }
-    .children-right img {
-        width:100%;
-    }
-}
-@media (max-width:700px) {
-    .children-section .wrapper {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .children-section .wrapper {
-        padding-inline:1rem;
-        gap:4rem;
-    }
-    .children-content p {
-        font-size:var(--mobile-text);
-    }
-    .children-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .children-titles h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .children-left,
-    .children-content {
-        gap:4rem !important;
-    }
-    .children-section {
-        background-position:center;
-    }
-}
-/* Second Youth */
-
-.youth-titles p {
-    font-size:var(--tag);
-    font-family: 'Permanent Marker', cursive;
-    color:var(--yellow);
-}
-.youth-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-}
-.youth-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.youth-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:8rem;
-}
-.youth-content {
-    width:100%;
-    display:flex;
-    align-items: center;
-    gap:8rem;
-}
-.youth-content p:nth-of-type(1) {
-    font-size:var(--subheading);
-    font-weight:700;
-}
-.youth-content p:nth-of-type(2) {
+.sermons-top p {
+    max-width:60ch;
     font-size:var(--text);
     line-height:1.75;
     font-weight:200;
 }
-.youth-left,
-.youth-right {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
+.sermons-bottom {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:2rem;
-    width:50%;
+    width:100%;
+}
+.blue .sermons-top {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:100%;
+}
+.sermons-bottom img {
+    width:100%;
 }
 @media (max-width:1015px) {
-    .youth-content {
-        flex-direction: column;
-        align-items: flex-start;
+    .sermons-top p {
+        max-width:100%;
     }
-    .youth-left,
-    .youth-right {
-        width:100%;
+    .sermons-bottom {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @Media (max-width:700px) {
-    .youth-section .wrapper {
+    .sermons-section .wrapper {
         padding-inline:2rem;
     }
 }
 @Media (max-width:500px) {
-    .youth-section .wrapper {
+    .sermons-section .wrapper {
         padding-inline:1rem;
-        gap:4rem;
     }
-    .youth-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .youth-titles h2 {
-        font-size:var(--mobile-heading-two);
-        text-align:center;
-    }
-    .youth-content p:nth-of-type(1) {
-        font-size:var(--mobile-subheading);
-    }
-    .youth-content p:nth-of-type(2) {
-        font-size:var(--mobile-text);
-    }
-    .youth-content {
-        gap:4rem;
-    }
-
-}
-/* Missions */
-
-.missions-section {
-    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/manpraying.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-
-.missions-titles p {
-    font-size:var(--tag);
-    font-family: 'Permanent Marker', cursive;
-    color:var(--yellow);
-}
-.missions-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-}
-.missions-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.missions-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:8rem;
-}
-.missions-content {
-    display:flex;
-    width:100%;
-    align-items: center;
-    gap:8rem;
-    flex-direction: column;
-}
-.missions-right,
-.missions-left {
-    width:50%;
-}
-.missions-left,
-.missions-right {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:2rem;
-}
-.missions-left {
-    justify-content: flex-start;
-    align-self:flex-start;
-}
-.missions-right {
-    justify-content: flex-end;
-    align-self:flex-end;
-}
-.missions-content p:nth-of-type(1) {
-    font-size:var(--subheading);
-    font-weight:700;
-}
-.missions-content p:nth-of-type(2) {
-    font-size:var(--text);
-    line-height:1.75;
-    font-weight:200;
-}
-@media (max-width:1015px) {
-    .missions-left {
-        justify-content: flex-start;
-        align-self:flex-start;
-        width:100%;
-    }
-    .missions-right {
-        justify-content: flex-end;
-        align-self:flex-start;
-        width:100%;
-    }
-}
-@media (max-width:700px) {
-    .missions-section .wrapper {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .missions-section {
-        background-position:center;
-    }
-    .missions-section .wrapper {
-        padding-inline:1rem;
-        gap:4rem;
-    }
-    .missions-content {
-        gap:4rem;
-    }
-    .missions-content p:nth-of-type(1) {
-        font-size:var(--mobile-subheading);
-        font-weight:700;
-    }
-    .missions-content p:nth-of-type(2) {
-        font-size:var(--mobile-text);
-        line-height:1.75;
-        font-weight:200;
-    }
-    .missions-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .missions-titles h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    
-}
-
-/* Friday */
-
-
-.friday-section {
-    background-image:linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ),url(../mfm-ministries/father-2770301_1920.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.friday-titles p {
-    font-size:var(--tag);
-    font-family: 'Permanent Marker', cursive;
-    color:var(--yellow);
-}
-.friday-titles h2 {
-    font-size:var(--heading-two);
-    font-family: 'Permanent Marker', cursive;
-}
-.friday-titles {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.friday-section .wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:8rem;
-}
-.friday-content {
-    display:flex;
-    flex-direction:column;
-    gap:8rem;
-}
-.friday-top {
-    width:100%;
-}
-.friday-top p:nth-of-type(1) {
-    font-size:var(--subheading);
-    font-weight:700;
-}
-.friday-top p {
-    font-size:var(--text);
-    font-weight:200;
-    line-height:1.75;
-}
-.friday-list p {
-    font-size:var(--text) !important;
-    font-weight:200 !important;
-}
-
-.friday-left,
-.friday-right {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:2rem;
-    width:50%;
-}
-.friday-list {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:2rem;
-}
-.friday-item {
-    display:flex;
-    align-items: center;
-    gap:1rem;
-}
-.friday-item img {
-    width:25px;
-}
-.friday-top {
-    display:flex;
-    align-items: center;
-    gap:8rem;
-}
-.friday-bottom {
-    width:100%;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    gap:2rem;
-}
-.friday-bottom img {
-    width:100%;
-}
-@media (max-width:1015px) {
-    .friday-top {
-        flex-direction: column;
-    }
-    .friday-left,
-    .friday-right {
-        width:100%;
-        align-items: flex-start;
-    }
-    .friday-bottom {
-        width:100%;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:2rem;
-    }
-}
-@media (max-width:700px) {
-    .friday-section .wrapper {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .friday-section .wrapper {
-        padding-inline:1rem;
-        gap:4rem;
-    }
-    .friday-titles h2 {
-        text-align: center;
-        font-size:var(--mobile-heading-two);
-    }
-    .friday-titles p {
-        font-size:var(--mobile-tag);
-    }
-    .friday-content {
-        gap:4rem;
-    }
-    .friday-top {
-        gap:4rem;
-    }
-    .friday-bottom {
+    .sermons-bottom {
         gap:1rem;
     }
-    .friday-top p:nth-of-type(1) {
-        font-size:var(--mobile-subheading);
+    .sermons-section .wrapper {
+        gap:4rem;
     }
-    .friday-top p {
+    .sermons-top p {
         font-size:var(--mobile-text);
     }
-    .friday-list p {
-        font-size:var(--mobile-text) !important;
-    }
-    
 }
-
 /* Footer **/
 footer {
     background-image: linear-gradient(to top, #304C59, #304C5900 100% ), linear-gradient(to bottom, #304C59, #304C5900 100% ), url(../mfm-home/roadendssign.png);

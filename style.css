@@ -801,7 +801,7 @@ h2 {
     color:var(--yellow);
 }
 .left-card {
-    width:40%;
+    width:35%;
     background-color:var(--glass);
     padding:2rem;
     backdrop-filter: blur(10px);
@@ -813,7 +813,7 @@ h2 {
     outline:1px solid var(--yellow);
 }
 .contact-right {
-    width:60%;
+    width:65%;
     display:flex;
     align-items: flex-end;
     align-self:flex-end;
