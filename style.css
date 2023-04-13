@@ -82,13 +82,14 @@ footer {
 body {
     background: var(--background);
 }
-
 /******* Dropdown *****/
 /***********************/
 .dropdown {
     position:relative !important;
     display:none;
     z-index:10000 !important;
+    height:max-content;
+    
 
     
 }
@@ -97,34 +98,45 @@ body {
     right:0;
     top:calc(100% + 0.5rem);
     padding:1.5rem;
-    background-color:var(--green);
+    background-color:var(--yellow);
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.432);
     display:grid;
     grid-template-columns:1fr 1fr;
-    width:max-content;
+    height:max-content;
     opacity:0;
     transform:translateY(-1rem);
     transition:opacity 0.5s, transform 0.5s;
     pointer-events:none;
     gap:2rem;
-
    
 }
 .dropdown-heading > a {
-    font-weight:500 !important;
+    font-weight:700 !important;
+    color:var(--background);
+    line-height:1.5;
+    
+
 }
 .dropdown-links {
     display:flex;
     flex-direction: column;
     gap:0.5rem;
+    color:var(--background);
+
 }
 .dropdown-links a {
     font-weight:500 !important;
+    color:var(--background);
+
 }
 .div {
     display:flex;
     flex-direction: column;
     gap:0.5rem;
+    width:max-content;
+    align-items: flex-start;
+    justify-content: center;
+    width:8rem;
 }
 
 .dropdown.active > .link + .dropdown-menu {
@@ -139,9 +151,12 @@ body {
 }
 .dropdown-heading > p {
     font-weight:700 !important;
+    color:var(--background);
+
 }
 .dropdown > a {
     font-weight:500 !important;
+    color:var(--background);
 }
 .menu {
     width:50px !important;
@@ -153,6 +168,8 @@ body {
 header {
     position:fixed;
     z-index:1000000;
+    backdrop-filter: blur(50px);
+
 }
 .header-wrapper {
     width:100%;
