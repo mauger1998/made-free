@@ -314,6 +314,8 @@ main .wrapper {
 @media (max-width:500px) {
     main .wrapper {
         padding-inline:1rem;
+        padding-top:12rem;
+
     }
 }
 
